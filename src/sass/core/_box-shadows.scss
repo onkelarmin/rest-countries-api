@@ -1,0 +1,44 @@
+// bs-none is used for transitions
+$box-shadow-colors: (
+  none: (
+    light: "transparent",
+    dark: "transparent",
+  ),
+  header: (
+    light: "neutral-1000" 0.05,
+    dark: "neutral-1000" 0.05,
+  ),
+  controls: (
+    light: "neutral-1000" 0.05,
+    dark: "neutral-1000" 0.05,
+  ),
+  card: (
+    light: "neutral-1000" 0.05,
+    dark: "neutral-1000" 0.05,
+  ),
+  back-link: (
+    light: "neutral-1000" 0.1,
+    dark: "neutral-1000" 0.1,
+  ),
+  country-link: (
+    light: "neutral-1000" 0.1,
+    dark: "neutral-1000" 0.1,
+  ),
+);
+
+$box-shadows-offsets: (
+  none: 0px 0px 0px 0px,
+  header: 0px 2px 4px 0px,
+  controls: 0px 2px 9px 0px,
+  card: 0px 0px 7px 2px,
+  back-link: 0px 0px 7px 0px,
+  country-link: 0px 0px 4px 1px,
+);
+
+$box-shadows: (
+  header: (var(--bs-header)),
+  controls: (var(--bs-controls)),
+  card: (var(--bs-card)),
+  back-link: (var(--bs-back-link)),
+  country-link: (var(--bs-country-link)),
+);

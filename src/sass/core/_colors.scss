@@ -1,0 +1,84 @@
+// Primitives
+$color-core-neutral: (
+  "000": hsl(0 0% 100%),
+  "1000": hsl(0 0% 0%),
+);
+
+$color-core-accent: (
+  "grey": (
+    "050": hsl(0 0% 99%),
+    "250": hsl(0 0% 77%),
+    "300": hsl(0 0% 70%),
+    "350": hsl(0 0% 59%),
+    "400": hsl(0 0% 50%),
+    "950": hsl(200 15% 8%),
+  ),
+  "blue": (
+    "500": hsl(215 100% 48%),
+    "900": hsl(209 23% 22%),
+    "950": hsl(207 26% 17%),
+  ),
+);
+
+$color-core-brand: (
+  // "primary": (
+  //   "500": hsl(274 82% 60%),
+   //  ),
+);
+
+$color-core-gradient: (
+  // 1: (
+  //   start: hsl(192 100% 67%),
+  //   end: hsl(280 87% 65%),
+   // ),
+);
+
+// Has Themes
+$has-themes: true;
+
+// Default-brand
+$default-brand: "primary";
+
+// Background-colors
+$background-colors: (
+  canvas: (
+    default: (
+      light: "grey-050",
+      dark: "blue-950",
+    ),
+  ),
+  container: (
+    default: (
+      light: "neutral-000",
+      dark: "blue-900",
+    ),
+  ),
+  text: (
+    selection: (
+      light: "grey-950",
+      dark: "neutral-000",
+    ),
+    target: (
+      light: "grey-950",
+      dark: "neutral-000",
+    ),
+  ),
+);
+
+// Foreground-colors
+$foreground-colors: (
+  text: (
+    base: (
+      light: "grey-950",
+      dark: "neutral-000",
+    ),
+    selection: (
+      light: "grey-050",
+      dark: "blue-950",
+    ),
+    target: (
+      light: "grey-050",
+      dark: "blue-950",
+    ),
+  ),
+);

@@ -1,0 +1,114 @@
+@use "helper" as *;
+
+// Font-family
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/fonts/NunitoSans.woff2") format("woff2");
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+$font-family: (
+  base: "'NunitoSans', system-ui, sans-serif",
+);
+
+// Font-weights
+$font-weights: (
+  thin: 100,
+  extra-light: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700,
+  extra-bold: 800,
+  black: 900,
+);
+
+// Fonts
+$fonts: (
+  1: (
+    "family": "base",
+    "size": bp(24px, 32px, 32px),
+    "weight": "extra-bold",
+    "line-height": 1.375,
+    "letter-spacing": 0px,
+  ),
+  2: (
+    "family": "base",
+    "size": bp(14px, 24px, 24px),
+    "weight": "extra-bold",
+    "line-height": 1.375,
+    "letter-spacing": 0px,
+  ),
+  3: (
+    "family": "base",
+    "size": rem(18px),
+    "weight": "extra-bold",
+    "line-height": 1.45,
+    "letter-spacing": 0px,
+  ),
+  4: (
+    "family": "base",
+    "size": bp(12px, 16px, 16px),
+    "weight": "semi-bold",
+    "line-height": 2,
+    "letter-spacing": 0px,
+  ),
+  5: (
+    "family": "base",
+    "size": rem(16px),
+    "weight": "semi-bold",
+    "line-height": 1.5,
+    "letter-spacing": 0px,
+  ),
+  6: (
+    "family": "base",
+    "size": bp(14px, 16px, 16px),
+    "weight": "light",
+    "line-height": 2,
+    "letter-spacing": 0px,
+  ),
+  7: (
+    "family": "base",
+    "size": bp(12px, 14px, 14px),
+    "weight": "light",
+    "line-height": 2.25,
+    "letter-spacing": 0px,
+  ),
+  8: (
+    "family": "base",
+    "size": bp(14px, 16px, 16px),
+    "weight": "semi-bold",
+    "line-height": 2,
+    "letter-spacing": 0px,
+  ),
+  9: (
+    "family": "base",
+    "size": bp(14px, 16px, 16px),
+    "weight": "light",
+    "line-height": 2,
+    "letter-spacing": 0px,
+  ),
+  10: (
+    "family": "base",
+    "size": rem(14px),
+    "weight": "semi-bold",
+    "line-height": 1.15,
+    "letter-spacing": 0px,
+  ),
+  11: (
+    "family": "base",
+    "size": rem(14px),
+    "weight": "light",
+    "line-height": 1.15,
+    "letter-spacing": 0px,
+  ),
+  12: (
+    "family": "base",
+    "size": bp(12px, 14px, 14px),
+    "weight": "regular",
+    "line-height": 1.4,
+    "letter-spacing": 0px,
+  ),
+);
