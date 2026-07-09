@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--bg-container-default);
+  box-shadow: var(--bs-header);
+  padding-block: var(--pad-cont-header);
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,13 @@
+.themeSwitch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-cont-sm);
+  font: var(--font-4);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: var(--size-icon-theme);
+}

@@ -29,14 +29,14 @@ $font-weights: (
 $fonts: (
   1: (
     "family": "base",
-    "size": bp(24px, 32px, 32px),
+    "size": bp(24px, 24px, 32px),
     "weight": "extra-bold",
     "line-height": 1.375,
     "letter-spacing": 0px,
   ),
   2: (
     "family": "base",
-    "size": bp(14px, 24px, 24px),
+    "size": bp(14px, 14px, 24px),
     "weight": "extra-bold",
     "line-height": 1.375,
     "letter-spacing": 0px,
@@ -50,7 +50,7 @@ $fonts: (
   ),
   4: (
     "family": "base",
-    "size": bp(12px, 16px, 16px),
+    "size": bp(12px, 12px, 16px),
     "weight": "semi-bold",
     "line-height": 2,
     "letter-spacing": 0px,
@@ -64,28 +64,28 @@ $fonts: (
   ),
   6: (
     "family": "base",
-    "size": bp(14px, 16px, 16px),
+    "size": bp(14px, 14px, 16px),
     "weight": "light",
     "line-height": 2,
     "letter-spacing": 0px,
   ),
   7: (
     "family": "base",
-    "size": bp(12px, 14px, 14px),
+    "size": bp(12px, 12px, 14px),
     "weight": "light",
     "line-height": 2.25,
     "letter-spacing": 0px,
   ),
   8: (
     "family": "base",
-    "size": bp(14px, 16px, 16px),
+    "size": bp(14px, 14px, 16px),
     "weight": "semi-bold",
     "line-height": 2,
     "letter-spacing": 0px,
   ),
   9: (
     "family": "base",
-    "size": bp(14px, 16px, 16px),
+    "size": bp(14px, 14px, 16px),
     "weight": "light",
     "line-height": 2,
     "letter-spacing": 0px,
@@ -106,7 +106,7 @@ $fonts: (
   ),
   12: (
     "family": "base",
-    "size": bp(12px, 14px, 14px),
+    "size": bp(12px, 12px, 14px),
     "weight": "regular",
     "line-height": 1.4,
     "letter-spacing": 0px,

@@ -23,7 +23,7 @@
 
   // Box-shadows
   @each $semantic, $value in $box-shadows-offsets {
-    --bs-#{$semantic}: #{$value} var(--clr-bs-#{$semantic});
+    --box-shadow-#{$semantic}: #{$value} var(--clr-bs-#{$semantic});
   }
   @each $semantic, $value in $box-shadows {
     --bs-#{$semantic}: #{$value};

@@ -46,17 +46,17 @@
 // View transition theme switch
 @media (prefers-reduced-motion: no-preference) {
   ::view-transition-old(root) {
-    animation: fade-out var(--motion-slow) var(--ease-in);
+    animation: fade-out var(--motion-default) var(--ease-in);
   }
 
   ::view-transition-new(root) {
-    animation: fade-in var(--motion-slow) var(--ease-out);
+    animation: fade-in var(--motion-default) var(--ease-out);
   }
 
   @keyframes fade-in {
     from {
       opacity: 0;
-      filter: blur(16px);
+      filter: blur(8px);
     }
     to {
       opacity: 1;
@@ -68,7 +68,7 @@
     }
     to {
       opacity: 0;
-      filter: blur(16px);
+      filter: blur(8px);
     }
   }
 }

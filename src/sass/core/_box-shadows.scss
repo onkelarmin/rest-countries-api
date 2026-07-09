@@ -36,9 +36,9 @@ $box-shadows-offsets: (
 );
 
 $box-shadows: (
-  header: (var(--bs-header)),
-  controls: (var(--bs-controls)),
-  card: (var(--bs-card)),
-  back-link: (var(--bs-back-link)),
-  country-link: (var(--bs-country-link)),
+  header: (var(--box-shadow-header)),
+  controls: (var(--box-shadow-controls)),
+  card: (var(--box-shadow-card)),
+  back-link: (var(--box-shadow-back-link)),
+  country-link: (var(--box-shadow-country-link)),
 );
