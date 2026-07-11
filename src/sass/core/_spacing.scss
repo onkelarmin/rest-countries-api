@@ -23,6 +23,7 @@ $padding-container: (
   search-inline: rem(32px),
   filter-inline: rem(24px),
   filter-block: rem(16px),
+  filter-option-block: rem(4px),
 );
 
 // Container spacing
@@ -31,6 +32,10 @@ $spacer-container: (
   md: rem(16px),
   lg: rem(24px),
   xl: rem(40px),
+  controls-margin-block-start: bp(24px, 48px, 48px),
+  controls-gap: bp(40px, 8px, 8px),
+  country-list-gap: bp(40px, 72px, 72px),
+  country-list-margin-block-start: bp(32px, 48px, 48px),
 );
 
 // Offset

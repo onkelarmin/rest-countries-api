@@ -14,6 +14,8 @@ $color-core-accent: (
     "950": hsl(200 15% 8%),
   ),
   "blue": (
+    "200": hsl(215 80% 75%),
+    "400": hsl(215 90% 60%),
     "500": hsl(215 100% 48%),
     "900": hsl(209 23% 22%),
     "950": hsl(207 26% 17%),
@@ -61,6 +63,10 @@ $background-colors: (
     target: (
       light: "grey-950",
       dark: "neutral-000",
+    ),
+    selected-filter: (
+      light: "blue-200",
+      dark: "blue-400",
     ),
   ),
 );

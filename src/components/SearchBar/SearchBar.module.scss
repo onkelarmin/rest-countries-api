@@ -1,0 +1,26 @@
+.searchBar {
+  position: relative;
+  width: min(100%, 30rem);
+
+  .icon {
+    width: var(--size-icon-search);
+    position: absolute;
+    align-self: center;
+    left: var(--pad-cont-search-inline);
+  }
+
+  input {
+    width: 100%;
+    height: var(--size-misc-controls-height);
+    font: var(--font-12);
+    background-color: var(--bg-container-default);
+    border: none;
+    border-radius: var(--br-md);
+    box-shadow: var(--bs-controls);
+    padding-inline-start: calc(
+      var(--pad-cont-search-inline) + var(--size-icon-search) +
+        var(--space-cont-lg)
+    );
+    padding-inline-end: var(--pad-cont-search-inline);
+  }
+}

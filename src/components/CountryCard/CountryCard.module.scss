@@ -1,0 +1,36 @@
+.card {
+  max-width: 20rem;
+  background-color: var(--bg-container-default);
+  border-radius: var(--br-md);
+  box-shadow: var(--bs-card);
+  overflow: clip;
+}
+
+.flag {
+  aspect-ratio: 264 / 160;
+  object-fit: cover;
+}
+
+.content {
+  padding-inline: var(--pad-cont-country-card-inline);
+  padding-block-end: var(--pad-cont-country-card-block-end);
+  margin-block-start: var(--space-cont-lg);
+
+  .stats {
+    display: grid;
+    gap: var(--space-cont-sm);
+    margin-block-start: var(--space-cont-md);
+
+    .stat {
+      display: flex;
+      gap: 1ch;
+
+      dt {
+        font: var(--font-10);
+      }
+      dd {
+        font: var(--font-11);
+      }
+    }
+  }
+}

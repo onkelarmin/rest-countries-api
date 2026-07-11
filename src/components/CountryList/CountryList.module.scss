@@ -1,0 +1,9 @@
+.countryList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  justify-items: center;
+  gap: var(--space-cont-country-list-gap);
+  list-style: none;
+  padding-inline: var(--pad-sect-country-list-inline);
+  margin-block-start: var(--space-cont-country-list-margin-block-start);
+}

@@ -1,0 +1,70 @@
+.label {
+  position: relative;
+  width: 12.5rem;
+
+  .icon {
+    position: absolute;
+    align-self: center;
+    right: var(--pad-cont-filter-inline);
+    pointer-events: none;
+    transition: rotate var(--trans-fast-out-sensitive);
+  }
+
+  &:has(:open) .icon {
+    rotate: 180deg;
+  }
+}
+
+.regionFilter {
+  appearance: base-select;
+  width: 100%;
+  height: var(--size-misc-controls-height);
+  font: var(--font-12);
+  align-items: center;
+  background-color: var(--bg-container-default);
+  border: none;
+  border-radius: var(--br-md);
+  box-shadow: var(--bs-controls);
+  padding-inline: var(--pad-cont-filter-inline);
+  cursor: pointer;
+
+  &::picker(select) {
+    appearance: base-select;
+    background-color: var(--bg-container-default);
+    border: none;
+    border-radius: var(--br-md);
+    box-shadow: var(--bs-controls);
+    padding-block: var(--pad-cont-filter-block);
+    margin-block-start: var(--space-cont-sm);
+    opacity: 0;
+    transition:
+      opacity var(--trans-fast-out),
+      display var(--trans-fast-out) allow-discrete,
+      overlay var(--trans-fast-out) allow-discrete;
+  }
+
+  &:open::picker(select) {
+    opacity: 1;
+
+    @starting-style {
+      opacity: 0;
+    }
+  }
+
+  &::picker-icon {
+    content: "";
+  }
+
+  option {
+    padding-inline: var(--pad-cont-filter-inline);
+    padding-block: var(--pad-cont-filter-option-block);
+
+    &::checkmark {
+      display: none;
+    }
+
+    &:checked {
+      background-color: var(--bg-text-selected-filter);
+    }
+  }
+}
