@@ -36,6 +36,11 @@ $spacer-container: (
   controls-gap: bp(40px, 8px, 8px),
   country-list-gap: bp(40px, 72px, 72px),
   country-list-margin-block-start: bp(32px, 48px, 48px),
+  country-details-main-margin-block-start: bp(40px, 40px, 80px),
+  country-details-inner-margin-block-start: bp(64px, 56px, 80px),
+  country-details-inner-gap: bp(48px, 56px, 80px),
+  country-details-lists-margin-block-start: bp(16px, 24px, 24px),
+  country-details-borders-margin-block-start: bp(32px, 24px, 64px),
 );
 
 // Offset

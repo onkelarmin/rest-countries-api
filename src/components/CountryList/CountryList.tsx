@@ -1,9 +1,10 @@
 import styles from "./CountryList.module.scss";
 import { CountryCard } from "@/components/CountryCard/CountryCard";
-import type { Country } from "@/types";
+import type { CountryBase } from "@/api/countries/types";
+import { NavLink } from "react-router";
 
 type CountryListProps = {
-  countries: Country[];
+  countries: CountryBase[];
 };
 
 export function CountryList({ countries }: CountryListProps) {
@@ -11,7 +12,9 @@ export function CountryList({ countries }: CountryListProps) {
     <ul className={styles.countryList}>
       {countries.map((country) => (
         <li key={country.isoCode3}>
-          <CountryCard country={country} />
+          <NavLink to={`/${country.isoCode3}`} className={styles.link}>
+            <CountryCard country={country} />
+          </NavLink>
         </li>
       ))}
     </ul>

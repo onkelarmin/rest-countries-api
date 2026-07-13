@@ -35,15 +35,21 @@ $breakpoint-specific-sizes: (
   (14px, 14px, 16px),
   (14px, 14px, 24px),
   (15px, 17px, 17px),
+  (16px, 24px, 24px),
   (16px, 40px, 40px),
   (17px, 22px, 22px),
   (24px, 24px, 32px),
   (24px, 48px, 48px),
   (30px, 30px, 24px),
+  (32px, 24px, 64px),
+  (32px, 40px, 40px),
   (32px, 48px, 48px),
   (40px, 8px, 8px),
+  (40px, 40px, 80px),
   (40px, 44px, 0px),
-  (40px, 72px, 72px)
+  (40px, 72px, 72px),
+  (48px, 56px, 80px),
+  (64px, 56px, 80px)
 );
 
 //  Logo
@@ -56,7 +62,6 @@ $icon-sizes: (
   theme: bp(12px, 12px, 15px),
   search: bp(15px, 17px, 17px),
   chevron: bp(7px, 9px, 9px),
-  back-arrow: bp(17px, 22px, 22px),
 );
 
 $miscellaneous-sizes: (

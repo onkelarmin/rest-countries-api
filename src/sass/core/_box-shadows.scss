@@ -12,15 +12,23 @@ $box-shadow-colors: (
     light: "neutral-1000" 0.05,
     dark: "neutral-1000" 0.05,
   ),
+  controls-hover: (
+    light: "neutral-1000" 0.05,
+    dark: "neutral-1000" 0.05,
+  ),
   card: (
     light: "neutral-1000" 0.05,
     dark: "neutral-1000" 0.05,
   ),
-  back-link: (
+  card-hover: (
+    light: "neutral-1000" 0.05,
+    dark: "neutral-1000" 0.05,
+  ),
+  back-button: (
     light: "neutral-1000" 0.1,
     dark: "neutral-1000" 0.1,
   ),
-  country-link: (
+  border-button: (
     light: "neutral-1000" 0.1,
     dark: "neutral-1000" 0.1,
   ),
@@ -30,15 +38,19 @@ $box-shadows-offsets: (
   none: 0px 0px 0px 0px,
   header: 0px 2px 4px 0px,
   controls: 0px 2px 9px 0px,
+  controls-hover: 0px 2px 9px 6px,
   card: 0px 0px 7px 2px,
-  back-link: 0px 0px 7px 0px,
-  country-link: 0px 0px 4px 1px,
+  card-hover: 0px 0px 16px 12px,
+  back-button: 0px 0px 7px 0px,
+  border-button: 0px 0px 4px 1px,
 );
 
 $box-shadows: (
   header: (var(--box-shadow-header)),
   controls: (var(--box-shadow-controls)),
+  controls-hover: (var(--box-shadow-controls-hover)),
   card: (var(--box-shadow-card)),
-  back-link: (var(--box-shadow-back-link)),
-  country-link: (var(--box-shadow-country-link)),
+  card-hover: (var(--box-shadow-card-hover)),
+  back-button: (var(--box-shadow-back-button)),
+  border-button: (var(--box-shadow-border-button)),
 );

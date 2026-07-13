@@ -27,6 +27,13 @@
   box-shadow: var(--bs-controls);
   padding-inline: var(--pad-cont-filter-inline);
   cursor: pointer;
+  transition: box-shadow var(--trans-fast-out-sensitive);
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: var(--bs-controls-hover);
+    }
+  }
 
   &::picker(select) {
     appearance: base-select;

@@ -22,5 +22,12 @@
         var(--space-cont-lg)
     );
     padding-inline-end: var(--pad-cont-search-inline);
+    transition: box-shadow var(--trans-fast-out-sensitive);
+
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: var(--bs-controls-hover);
+      }
+    }
   }
 }

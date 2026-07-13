@@ -1,5 +1,5 @@
 import styles from "./MainLayout.module.scss";
-import { Outlet } from "react-router";
+import { Outlet, ScrollRestoration } from "react-router";
 import { ThemeSwitch } from "@/components/ThemeSwitch/ThemeSwitch";
 import { Wrapper } from "@/components/utilities/Wrapper/Wrapper";
 
@@ -15,6 +15,7 @@ export function MainLayout() {
         </Wrapper>
       </header>
       <Outlet />
+      <ScrollRestoration />
     </>
   );
 }

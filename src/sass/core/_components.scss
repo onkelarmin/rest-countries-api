@@ -2,7 +2,7 @@
 
 // Buttons
 $button-colors: (
-  default: (
+  back: (
     idle: (
       bg: (
         light: "neutral-000",
@@ -13,29 +13,50 @@ $button-colors: (
         dark: "neutral-000",
       ),
     ),
+    hover: (
+      bg: (
+        light: "grey-100",
+        dark: "blue-800",
+      ),
+    ),
+  ),
+  border: (
+    idle: (
+      bg: (
+        light: "neutral-000",
+        dark: "blue-900",
+      ),
+      fg: (
+        light: "grey-950",
+        dark: "neutral-000",
+      ),
+    ),
+    hover: (
+      bg: (
+        light: "grey-100",
+        dark: "blue-800",
+      ),
+    ),
   ),
 );
 
 $button-appearance: (
-  padding-inline-start: (
-    default: rem(20px),
+  padding-inline: (
+    back: bp(24px, 24px, 32px),
+    border: rem(28px),
   ),
-  padding-inline-end: (
-    default: rem(8px),
-  ),
-  padding-block: (
-    default: rem(8px),
-  ),
-  border-width: (
-    default: 0px,
+  height: (
+    back: bp(32px, 40px, 40px),
+    border: rem(28px),
   ),
   border-radius: (
-    default: 1000px,
+    back: rem(2px),
+    border: rem(2px),
   ),
-  svg-width: (
-    default: rem(14px),
+  icon-width: (
+    back: bp(17px, 22px, 22px),
   ),
   gap: (
-    default: rem(12px),
+    back: rem(8px),
   ),
 );

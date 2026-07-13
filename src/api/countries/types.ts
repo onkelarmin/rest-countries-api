@@ -3,7 +3,21 @@ import type { RawCountriesSchema } from "./schema";
 
 export type RawCountries = z.infer<typeof RawCountriesSchema>;
 
-export type Country = {
+type BorderCountry = {
+  isoCode3: string;
+  commonName: string;
+};
+
+export type CountryBase = {
+  isoCode3: string;
+  commonName: string;
+  population: number;
+  region: string;
+  capitals: string[];
+  flagSvg: string;
+};
+
+export type CountryExtended = {
   isoCode3: string;
   commonName: string;
   nativeName: string;
@@ -14,6 +28,6 @@ export type Country = {
   topLevelDomains: string[];
   currencies: string[];
   languages: string[];
-  borderCountries: string[];
+  borderCountries: BorderCountry[];
   flagSvg: string;
 };

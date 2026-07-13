@@ -4,6 +4,16 @@
   border-radius: var(--br-md);
   box-shadow: var(--bs-card);
   overflow: clip;
+  transition:
+    scale var(--trans-fast-out-sensitive),
+    box-shadow var(--trans-fast-out-sensitive);
+
+  @media (hover: hover) {
+    &:hover {
+      scale: 1.02;
+      box-shadow: var(--bs-card-hover);
+    }
+  }
 }
 
 .flag {

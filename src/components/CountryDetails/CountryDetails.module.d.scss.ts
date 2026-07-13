@@ -60,9 +60,11 @@ declare const classNames: {
   readonly "mar-inline-auto-small": "mar-inline-auto-small";
   readonly "text-center-medium": "text-center-medium";
   readonly "mar-inline-auto-medium": "mar-inline-auto-medium";
-  readonly controls: "controls";
+  readonly lists: "lists";
+  readonly borders: "borders";
   readonly "text-center-large": "text-center-large";
   readonly "mar-inline-auto-large": "mar-inline-auto-large";
+  readonly inner: "inner";
   readonly uppercase: "uppercase";
   readonly "mar-inline-auto": "mar-inline-auto";
   readonly "center-block": "center-block";
@@ -434,5 +436,8 @@ declare const classNames: {
   readonly "fit-content": "fit-content";
   readonly js: "js";
   readonly "gsap-auto-alpha": "gsap-auto-alpha";
+  readonly image: "image";
+  readonly stat: "stat";
+  readonly borderLink: "borderLink";
 };
 export = classNames;

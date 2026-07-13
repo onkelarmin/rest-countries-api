@@ -1,0 +1,93 @@
+@use "@/sass/miscellaneous" as *;
+
+.inner {
+  display: grid;
+  align-items: center;
+  gap: var(--space-cont-country-details-inner-gap);
+  margin-block-start: var(
+    --space-cont-country-details-inner-margin-block-start
+  );
+
+  @include mq(large) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.image {
+  width: min(100%, 35rem);
+  border-radius: var(--br-lg);
+  margin-inline: auto;
+}
+
+.lists {
+  display: grid;
+  gap: var(--size-32);
+  margin-block-start: var(
+    --space-cont-country-details-lists-margin-block-start
+  );
+
+  @include mq(medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat {
+    display: flex;
+    gap: 1ch;
+  }
+
+  dt {
+    font: var(--font-8);
+    white-space: nowrap;
+  }
+  dd {
+    font: var(--font-9);
+  }
+}
+
+.borders {
+  display: grid;
+  gap: var(--size-16);
+  margin-block-start: var(
+    --space-cont-country-details-borders-margin-block-start
+  );
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-16);
+  }
+
+  @include mq(medium) {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.borderLink {
+  width: fit-content;
+  height: var(--btn-height-border);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-bg-color-idle-border);
+  color: var(--btn-fg-color-idle-border);
+  border: none;
+  border-radius: var(--btn-border-radius-border);
+  box-shadow: var(--bs-border-button);
+  font: var(--font-7);
+  text-transform: none;
+  text-decoration: none;
+  padding-inline: var(--btn-padding-inline-border);
+  cursor: pointer;
+  transition: background-color var(--trans-fast-out);
+
+  @media (hover: hover) {
+    &:not(:disabled):hover {
+      background-color: var(--btn-bg-color-hover-border);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
