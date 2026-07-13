@@ -9,8 +9,6 @@ import BackIcon from "@/assets/svg/icon-back-arrow.svg?react";
 export function Country() {
   const { countryPromise } = useLoaderData<typeof countryLoader>();
 
-  console.log(countryPromise);
-
   return (
     <main>
       <Wrapper>

@@ -6,9 +6,14 @@
   list-style: none;
   padding-inline: var(--pad-sect-country-list-inline);
   margin-block-start: var(--space-cont-country-list-margin-block-start);
+
+  > li {
+    width: 100%;
+  }
 }
 
 .link {
+  display: block;
   color: inherit;
   text-decoration: none;
 }

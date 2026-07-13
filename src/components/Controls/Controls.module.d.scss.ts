@@ -5,6 +5,7 @@ declare const classNames: {
   readonly "bg-text-target": "bg-text-target";
   readonly "bg-text-selected-filter": "bg-text-selected-filter";
   readonly "fg-text-base": "fg-text-base";
+  readonly "fg-text-highlight": "fg-text-highlight";
   readonly "fg-text-selection": "fg-text-selection";
   readonly "fg-text-target": "fg-text-target";
   readonly "br-2": "br-2";

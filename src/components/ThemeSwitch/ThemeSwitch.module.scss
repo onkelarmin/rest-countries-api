@@ -6,6 +6,13 @@
   background: none;
   border: none;
   cursor: pointer;
+  transition: color var(--trans-fast-out);
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--fg-text-highlight);
+    }
+  }
 }
 
 .icon {

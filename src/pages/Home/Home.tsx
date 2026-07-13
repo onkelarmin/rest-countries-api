@@ -11,8 +11,6 @@ export function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filterRegion, setFilterRegion] = useState("");
 
-  console.log(`Search: ${searchQuery}, filter: ${filterRegion}`);
-
   return (
     <main>
       <Wrapper>
