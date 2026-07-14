@@ -2,6 +2,7 @@ import styles from "./ErrorBoundary.module.scss";
 import { isRouteErrorResponse, NavLink, useRouteError } from "react-router";
 import { Wrapper } from "@/components/utilities/Wrapper/Wrapper";
 import { Heading } from "@/components/utilities/Heading/Heading";
+import { Button } from "@/components/utilities/Button/Button";
 
 export function ErrorBoundary() {
   const error = useRouteError();
@@ -40,9 +41,9 @@ export function ErrorBoundary() {
 
           <p>{message}</p>
 
-          <NavLink to="/" className={styles.backLink}>
-            <span>Back to Countries</span>
-          </NavLink>
+          <Button As={NavLink} variant="back" to="/">
+            Back to Countries
+          </Button>
         </div>
       </Wrapper>
     </main>

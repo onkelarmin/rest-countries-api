@@ -61,33 +61,3 @@
     grid-template-columns: auto 1fr;
   }
 }
-
-.borderLink {
-  width: fit-content;
-  height: var(--btn-height-border);
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--btn-bg-color-idle-border);
-  color: var(--btn-fg-color-idle-border);
-  border: none;
-  border-radius: var(--btn-border-radius-border);
-  box-shadow: var(--bs-border-button);
-  font: var(--font-7);
-  text-transform: none;
-  text-decoration: none;
-  padding-inline: var(--btn-padding-inline-border);
-  cursor: pointer;
-  transition: background-color var(--trans-fast-out);
-
-  @media (hover: hover) {
-    &:not(:disabled):hover {
-      background-color: var(--btn-bg-color-hover-border);
-    }
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-  }
-}

@@ -441,6 +441,5 @@ declare const classNames: {
   readonly "gsap-auto-alpha": "gsap-auto-alpha";
   readonly image: "image";
   readonly stat: "stat";
-  readonly borderLink: "borderLink";
 };
 export = classNames;

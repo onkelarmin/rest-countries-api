@@ -2,6 +2,7 @@ import styles from "./NotFound.module.scss";
 import { Heading } from "@/components/utilities/Heading/Heading";
 import { NavLink } from "react-router";
 import { Wrapper } from "@/components/utilities/Wrapper/Wrapper";
+import { Button } from "@/components/utilities/Button/Button";
 
 export function NotFound() {
   return (
@@ -16,9 +17,9 @@ export function NotFound() {
 
           <p>Sorry, we couldn't find the page you're looking for.</p>
 
-          <NavLink to="/" className={styles.backLink}>
-            <span>Back to Countries</span>
-          </NavLink>
+          <Button As={NavLink} variant="back" to="/">
+            Back to Countries
+          </Button>
         </div>
       </Wrapper>
     </main>

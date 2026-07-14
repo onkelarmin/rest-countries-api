@@ -6,6 +6,7 @@ import type { countryLoader } from "./loader";
 import { CountryDetails } from "@/components/CountryDetails/CountryDetails";
 import BackIcon from "@/assets/svg/icon-back-arrow.svg?react";
 import { CountryDetailsSkeleton } from "@/components/CountryDetails/CountryDetailsSkeleton";
+import { Button } from "@/components/utilities/Button/Button";
 
 export function Country() {
   const { countryPromise } = useLoaderData<typeof countryLoader>();
@@ -16,10 +17,10 @@ export function Country() {
     <main>
       <Wrapper>
         <div className={styles.inner}>
-          <NavLink to="/" className={styles.backLink}>
+          <Button As={NavLink} variant="back" to="/">
             <BackIcon className={styles.icon} aria-hidden="true" />
             <span>Back</span>
-          </NavLink>
+          </Button>
 
           <Suspense key={countryCode} fallback={<CountryDetailsSkeleton />}>
             <Await resolve={countryPromise}>

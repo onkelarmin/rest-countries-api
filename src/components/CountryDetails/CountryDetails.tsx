@@ -4,6 +4,7 @@ import { Heading } from "@/components/utilities/Heading/Heading";
 import { formatList } from "@/utils/formatList";
 import { formatNumber } from "@/utils/formatNumber";
 import { NavLink } from "react-router";
+import { Button } from "@/components/utilities/Button/Button";
 
 type CountryDetailsProps = {
   country: CountryExtended;
@@ -89,12 +90,13 @@ export function CountryDetails({ country }: CountryDetailsProps) {
           <ul>
             {borderCountries.map((bc) => (
               <li key={bc.isoCode3} className="list-style-none">
-                <NavLink
+                <Button
+                  As={NavLink}
+                  variant="border"
                   to={`/countries/${bc.isoCode3}`}
-                  className={styles.borderLink}
                 >
                   {bc.commonName}
-                </NavLink>
+                </Button>
               </li>
             ))}
           </ul>

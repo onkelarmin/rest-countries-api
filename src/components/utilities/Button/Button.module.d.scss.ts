@@ -1,5 +1,4 @@
 declare const classNames: {
-  readonly inner: "inner";
-  readonly icon: "icon";
+  readonly button: "button";
 };
 export = classNames;
