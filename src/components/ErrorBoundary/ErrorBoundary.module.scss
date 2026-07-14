@@ -7,8 +7,9 @@
   text-align: center;
 }
 
-.status {
-  font: var(--font-13);
+.eyebrow {
+  font: var(--font-2);
+  margin-block-end: var(--size-12);
 }
 
 .backLink {
@@ -39,9 +40,5 @@
 
   &:disabled {
     cursor: not-allowed;
-  }
-
-  .icon {
-    width: var(--btn-icon-width-back);
   }
 }
