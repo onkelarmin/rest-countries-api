@@ -14,11 +14,16 @@ export async function countryLoader({
     });
   }
 
-  const countryData = await fetchCountryByCode(countryCode, signal);
+  const countryPromise = (async () => {
+    const countryData = await fetchCountryByCode(countryCode, signal);
 
-  const borderCountryData = await fetchBorderCountries(countryCode, signal);
+    const borderCountryData =
+      countryData.data.objects[0].borders.length > 0
+        ? await fetchBorderCountries(countryCode, signal)
+        : { data: { objects: [] } };
 
-  const country = transformRawCountry(countryData, borderCountryData);
+    return transformRawCountry(countryData, borderCountryData);
+  })();
 
-  return { countryPromise: country };
+  return { countryPromise };
 }

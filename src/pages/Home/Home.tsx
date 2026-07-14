@@ -4,6 +4,7 @@ import type { homeLoader } from "./loader";
 import { CountryList } from "@/components/CountryList/CountryList";
 import { Wrapper } from "@/components/utilities/Wrapper/Wrapper";
 import { Controls } from "@/components/Controls/Controls";
+import { CountryListSkeleton } from "@/components/CountryList/CountryListSkeleton";
 
 export function Home() {
   const { countriesPromise } = useLoaderData<typeof homeLoader>();
@@ -23,7 +24,7 @@ export function Home() {
           setFilterRegion={setFilterRegion}
         />
 
-        <Suspense fallback="Loading...">
+        <Suspense fallback={<CountryListSkeleton />}>
           <Await resolve={countriesPromise}>
             {(countries) => {
               const visibleCountries = countries.filter((country) => {

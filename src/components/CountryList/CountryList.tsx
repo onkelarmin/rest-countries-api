@@ -12,7 +12,10 @@ export function CountryList({ countries }: CountryListProps) {
     <ul className={styles.countryList}>
       {countries.map((country) => (
         <li key={country.isoCode3}>
-          <NavLink to={`/${country.isoCode3}`} className={styles.link}>
+          <NavLink
+            to={`/countries/${country.isoCode3}`}
+            className={styles.link}
+          >
             <CountryCard country={country} />
           </NavLink>
         </li>

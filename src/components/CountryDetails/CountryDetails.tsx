@@ -89,7 +89,10 @@ export function CountryDetails({ country }: CountryDetailsProps) {
           <ul>
             {borderCountries.map((bc) => (
               <li key={bc.isoCode3} className="list-style-none">
-                <NavLink to={`/${bc.isoCode3}`} className={styles.borderLink}>
+                <NavLink
+                  to={`/countries/${bc.isoCode3}`}
+                  className={styles.borderLink}
+                >
                   {bc.commonName}
                 </NavLink>
               </li>

@@ -4,6 +4,7 @@ declare const classNames: {
   readonly "bg-text-selection": "bg-text-selection";
   readonly "bg-text-target": "bg-text-target";
   readonly "bg-text-selected-filter": "bg-text-selected-filter";
+  readonly "bg-skeleton-default": "bg-skeleton-default";
   readonly "fg-text-base": "fg-text-base";
   readonly "fg-text-highlight": "fg-text-highlight";
   readonly "fg-text-selection": "fg-text-selection";
@@ -56,6 +57,7 @@ declare const classNames: {
   readonly "font-10": "font-10";
   readonly "font-11": "font-11";
   readonly "font-12": "font-12";
+  readonly "font-13": "font-13";
   readonly "text-center": "text-center";
   readonly "text-center-small": "text-center-small";
   readonly "mar-inline-auto-small": "mar-inline-auto-small";
