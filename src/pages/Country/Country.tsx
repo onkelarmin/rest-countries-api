@@ -24,7 +24,17 @@ export function Country() {
 
           <Suspense key={countryCode} fallback={<CountryDetailsSkeleton />}>
             <Await resolve={countryPromise}>
-              {(country) => <CountryDetails country={country} />}
+              {(country) => (
+                <>
+                  <title>{`${country.commonName} | Countries`}</title>
+                  <meta
+                    name="description"
+                    content={`Learn more about ${country.commonName}, including its population, capital, region, languages, currencies, and neighbouring countries.`}
+                  />
+
+                  <CountryDetails country={country} />
+                </>
+              )}
             </Await>
           </Suspense>
         </div>

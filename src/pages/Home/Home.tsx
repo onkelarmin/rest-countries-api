@@ -14,6 +14,12 @@ export function Home() {
 
   return (
     <main>
+      <title>Countries | Explore the World</title>
+      <meta
+        name="description"
+        content="Browse countries from around the world. Search by name, filter by region, and view detailed information about each country."
+      />
+
       <Wrapper>
         <h1 className="visually-hidden">Countries</h1>
 
