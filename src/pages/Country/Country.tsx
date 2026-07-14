@@ -17,7 +17,7 @@ export function Country() {
     <main>
       <Wrapper>
         <div className={styles.inner}>
-          <Button As={NavLink} variant="back" to="/">
+          <Button As={NavLink} variant="back" to="/" viewTransition>
             <BackIcon className={styles.icon} aria-hidden="true" />
             <span>Back</span>
           </Button>

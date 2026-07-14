@@ -1,6 +1,8 @@
 .inner {
   padding-inline: var(--pad-sect-country-details);
-  margin-block-start: var(--space-cont-country-details-main-margin-block-start);
+  padding-block-start: var(
+    --space-cont-country-details-main-margin-block-start
+  );
 }
 
 .icon {

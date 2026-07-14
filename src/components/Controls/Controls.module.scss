@@ -3,7 +3,7 @@
 .controls {
   display: grid;
   gap: var(--space-cont-controls-gap);
-  margin-block-start: var(--space-cont-controls-margin-block-start);
+  padding-block-start: var(--space-cont-controls-margin-block-start);
 
   @include mq(medium) {
     grid-template-columns: 1fr auto;

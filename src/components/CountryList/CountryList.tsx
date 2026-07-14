@@ -14,6 +14,7 @@ export function CountryList({ countries }: CountryListProps) {
         <li key={country.isoCode3}>
           <NavLink
             to={`/countries/${country.isoCode3}`}
+            viewTransition
             className={styles.link}
           >
             <CountryCard country={country} />

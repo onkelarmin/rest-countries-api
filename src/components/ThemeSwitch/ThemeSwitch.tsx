@@ -32,9 +32,15 @@ export function ThemeSwitch() {
       return;
     }
 
-    document.startViewTransition(() => {
-      document.documentElement.dataset.theme = theme;
+    document.startViewTransition({
+      update: () => {
+        document.documentElement.dataset.theme = theme;
+      },
+      types: ["theme"],
     });
+    // document.startViewTransition(() => {
+    //   document.documentElement.dataset.theme = theme;
+    // });
   }, [theme]);
 
   useEffect(() => {
