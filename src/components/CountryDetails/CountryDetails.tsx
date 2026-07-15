@@ -77,7 +77,7 @@ export function CountryDetails({ country }: CountryDetailsProps) {
             </div>
 
             <div className={styles.stat}>
-              <dt>Region:</dt>
+              <dt>Languages:</dt>
               <dd>{formatList(languages)}</dd>
             </div>
           </dl>
@@ -94,6 +94,7 @@ export function CountryDetails({ country }: CountryDetailsProps) {
                   As={NavLink}
                   variant="border"
                   to={`/countries/${bc.isoCode3}`}
+                  aria-label={`See details of ${bc.commonName}`}
                 >
                   {bc.commonName}
                 </Button>

@@ -16,6 +16,7 @@ export function CountryList({ countries }: CountryListProps) {
             to={`/countries/${country.isoCode3}`}
             viewTransition
             className={styles.link}
+            aria-label={`See details of ${country.commonName}`}
           >
             <CountryCard country={country} />
           </NavLink>
