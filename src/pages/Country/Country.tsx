@@ -7,7 +7,6 @@ import { CountryDetails } from "@/components/CountryDetails/CountryDetails";
 import BackIcon from "@/assets/svg/icon-back-arrow.svg?react";
 import { CountryDetailsSkeleton } from "@/components/CountryDetails/CountryDetailsSkeleton";
 import { Button } from "@/components/utilities/Button/Button";
-import { site } from "@/config/site";
 
 export function Country() {
   const { countryPromise } = useLoaderData<typeof countryLoader>();
