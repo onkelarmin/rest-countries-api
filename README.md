@@ -92,10 +92,10 @@ The tests focus on user behaviour using React Testing Library and User Event whi
 
 ## Live Demo
 
-https://...
+https://fm-rest-countries.netlify.app/
 
 ---
 
 ## Preview
 
-...
+https://github.com/user-attachments/assets/0d512838-66b0-464e-8e83-ef4efaf50a30

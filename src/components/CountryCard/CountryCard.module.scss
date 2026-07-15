@@ -4,6 +4,7 @@
   border-radius: var(--br-md);
   box-shadow: var(--bs-card);
   overflow: clip;
+  margin-inline: auto;
   transition:
     scale var(--trans-fast-out-sensitive),
     box-shadow var(--trans-fast-out-sensitive);
