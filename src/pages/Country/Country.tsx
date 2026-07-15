@@ -34,52 +34,6 @@ export function Country() {
                     content={`Learn more about ${country.commonName}, including its population, capital, region, languages, currencies, and neighbouring countries.`}
                   />
 
-                  {/* Open Graph / Facebook */}
-                  <meta property="og:type" content="website" />
-                  <meta
-                    property="og:url"
-                    content={`${site.origin}/countries/${country.isoCode3}`}
-                  />
-                  <meta
-                    property="og:title"
-                    content={`${country.commonName} | Countries`}
-                  />
-                  <meta
-                    property="og:description"
-                    content={`Learn more about ${country.commonName}, including its population, capital, region, languages, currencies, and neighbouring countries.`}
-                  />
-                  <meta
-                    property="og:image"
-                    content={`${site.origin}${site.image}`}
-                  />
-                  <meta
-                    property="og:image:alt"
-                    content={`${country.commonName} | Countries`}
-                  />
-
-                  {/* Twitter */}
-                  <meta property="twitter:card" content="summary_large_image" />
-                  <meta
-                    property="twitter:url"
-                    content={`${site.origin}/countries/${country.isoCode3}`}
-                  />
-                  <meta
-                    property="twitter:title"
-                    content={`${country.commonName} | Countries`}
-                  />
-                  <meta
-                    property="twitter:description"
-                    content={`Learn more about ${country.commonName}, including its population, capital, region, languages, currencies, and neighbouring countries.`}
-                  />
-                  <meta
-                    property="twitter:image"
-                    content={`${site.origin}${site.image}`}
-                  />
-                  <meta
-                    property="twitter:image:alt"
-                    content={`${country.commonName} | Countries`}
-                  />
-
                   <CountryDetails country={country} />
                 </>
               )}
