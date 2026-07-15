@@ -38,9 +38,6 @@ export function ThemeSwitch() {
       },
       types: ["theme"],
     });
-    // document.startViewTransition(() => {
-    //   document.documentElement.dataset.theme = theme;
-    // });
   }, [theme]);
 
   useEffect(() => {

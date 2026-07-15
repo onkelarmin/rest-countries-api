@@ -50,7 +50,7 @@ export async function fetchCountryByCode(
   signal: AbortSignal,
 ): Promise<RawCountries> {
   const response = await fetch(
-    `${API_BASE_URL}/codes.alpha_3/${code}?response_fields=${RESPONSE_FIELDS.join(",")}`,
+    `${API_BASE_URL}/codes.alpha_3/${encodeURI(code)}?response_fields=${RESPONSE_FIELDS.join(",")}`,
     {
       headers: { Authorization: `Bearer ${import.meta.env.VITE_API_KEY}` },
       signal,
@@ -78,7 +78,7 @@ export async function fetchBorderCountries(
   signal: AbortSignal,
 ): Promise<RawCountries> {
   const response = await fetch(
-    `${API_BASE_URL}/borders/${code}?response_fields=${RESPONSE_FIELDS.join(",")}`,
+    `${API_BASE_URL}/borders/${encodeURI(code)}?response_fields=${RESPONSE_FIELDS.join(",")}`,
     {
       headers: { Authorization: `Bearer ${import.meta.env.VITE_API_KEY}` },
       signal,

@@ -10,18 +10,30 @@ type CountryListProps = {
 export function CountryList({ countries }: CountryListProps) {
   return (
     <ul className={styles.countryList}>
-      {countries.map((country) => (
-        <li key={country.isoCode3}>
-          <NavLink
-            to={`/countries/${country.isoCode3}`}
-            viewTransition
-            className={styles.link}
-            aria-label={`See details of ${country.commonName}`}
-          >
-            <CountryCard country={country} />
-          </NavLink>
-        </li>
-      ))}
+      {countries.length === 0 ? (
+        <EmptyCountryListStatus />
+      ) : (
+        countries.map((country) => (
+          <li key={country.isoCode3}>
+            <NavLink
+              to={`/countries/${country.isoCode3}`}
+              viewTransition
+              className={styles.link}
+              aria-label={`See details of ${country.commonName}`}
+            >
+              <CountryCard country={country} />
+            </NavLink>
+          </li>
+        ))
+      )}
     </ul>
+  );
+}
+
+function EmptyCountryListStatus() {
+  return (
+    <div role="status">
+      No countries found. Try adjusting your search or selected region.
+    </div>
   );
 }
