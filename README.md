@@ -39,7 +39,7 @@ Throughout the project I also explored React Router's data loading model, learni
 
 ---
 
-## Architecture
+## Implementation Highlights
 
 ### React Router Data APIs
 
