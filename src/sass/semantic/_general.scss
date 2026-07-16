@@ -6,6 +6,7 @@ body {
   background-color: var(--bg-canvas-default);
   padding-block-end: var(--pad-page-block-end);
   text-wrap: pretty;
+  overflow-y: scroll;
 }
 
 :where(
